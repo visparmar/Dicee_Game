@@ -11,3 +11,12 @@ var randomimage2="dice"+randomNumber2+".png";
 var randomSource2=randomimage2;
 var temp2=document.querySelectorAll("img")[1];
 temp2.setAttribute("src",randomSource2);
+
+
+if(randomNumber1>randomNumber2)
+document.querySelector(".win").innerHTML="Player 1 win ";
+else  if(randomNumber1<randomNumber2)
+document.querySelector(".win").innerHTML="Player 2 win ";
+else
+	document.querySelector(".win").innerHTML="Draw..!!";
+
